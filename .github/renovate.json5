@@ -14,12 +14,5 @@
     }
   ],
   "customManagers": [
-    {
-      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-      "packageNameTemplate": "juju/juju",
-      "extractVersionTemplate": "^v(?<version>.*)$",
-      "datasourceTemplate": "pypi",
-      "versioningTemplate": "semver"
-    }
   ]
 }
