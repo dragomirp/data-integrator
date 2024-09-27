@@ -9,5 +9,15 @@
     // Later rules override earlier rules
   ],
   "customManagers": [
+    {
+      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+      "ignorePaths": [],
+      "matchStrings": [
+        "(?<packageName>.+)==(?<currentValue>[0-9\\.]+)+ +# renovate: pypi"
+      ],
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "datasourceTemplate": "pypi",
+      "versioningTemplate": "semver"
+    },
   ]
 }
