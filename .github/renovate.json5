@@ -3,10 +3,7 @@
   "extends": ["github>canonical/data-platform//renovate_presets/charm.json5"],
   "reviewers": ["dragomirp", "welpaolo"],
   "poetry": {
-    "fileMatch": [
-      "(^|/)pyproject\\.toml$",
-      "(^|/)tests/integration/app-charm/pyproject\\.toml$"
-    ],
+    "ignorePaths": []
   },
   "packageRules": [
     // Later rules override earlier rules
