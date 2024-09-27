@@ -17,9 +17,9 @@
       "matchStrings": [
         "- (?<packageName>.+)==(?<currentValue>[0-9\\.]+)+ +# renovate: pypi"
       ],
-      "extractVersionTemplate": "^v(?<version>.*)$",
       "datasourceTemplate": "pypi",
-      "versioningTemplate": "semver"
+      "versioningTemplate": "semver",
+      "groupName": "Python dependencies",
     },
   ]
 }
