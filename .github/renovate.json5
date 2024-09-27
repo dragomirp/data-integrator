@@ -7,7 +7,7 @@
       "^pyproject\\.toml$",
       "^tests/integration/app-charm/pyproject\\.toml$"
     ],
-  }
+  },
   "packageRules": [
     // Later rules override earlier rules
   ],
