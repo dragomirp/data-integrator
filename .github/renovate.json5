@@ -9,10 +9,17 @@
       "fileMatch": [
         "(^|/)pyproject\\.toml$",
         "(^|/)tests/integration/app-charm/pyproject\\.toml$",
-      ]
-      "groupName": "Python dependencies"
+      ],
+      "groupName": "Python dependencies",
     }
   ],
-  "regexManagers": [
+  "customManagers": [
+    {
+      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+      "packageNameTemplate": "juju/juju",
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "datasourceTemplate": "pypi",
+      "versioningTemplate": "semver"
+    }
   ]
 }
