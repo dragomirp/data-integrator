@@ -2,16 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>canonical/data-platform//renovate_presets/charm.json5"],
   "reviewers": ["dragomirp", "welpaolo"],
+  "poetry": {
+    "fileMatch": [
+      "^pyproject\\.toml$",
+      "^tests/integration/app-charm/pyproject\\.toml$"
+    ],
+  }
   "packageRules": [
     // Later rules override earlier rules
-    {
-      "matchManagers": ["poetry"],
-      "fileMatch": [
-        "^pyproject\\.toml$",
-        "^tests/integration/app-charm/pyproject\\.toml$"
-      ],
-      "groupName": "Python dependencies",
-    }
   ],
   "customManagers": [
   ]
