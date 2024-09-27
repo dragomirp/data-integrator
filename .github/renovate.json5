@@ -19,7 +19,6 @@
       ],
       "datasourceTemplate": "pypi",
       "versioningTemplate": "semver",
-      "groupName": "Python dependencies",
     },
   ]
 }
