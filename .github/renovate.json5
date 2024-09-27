@@ -5,7 +5,7 @@
   "poetry": {
     "fileMatch": [
       "(^|/)pyproject\\.toml$",
-      "^tests/integration/app-charm/pyproject\\.toml$"
+      "(^|/)tests/integration/app-charm/pyproject\\.toml$"
     ],
   },
   "packageRules": [
