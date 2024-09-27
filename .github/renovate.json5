@@ -7,8 +7,8 @@
     {
       "matchManagers": ["poetry"],
       "fileMatch": [
-        "(^|/)pyproject\\.toml$",
-        "(^|/)tests/integration/app-charm/pyproject\\.toml$",
+        "^pyproject\\.toml$",
+        "^tests/integration/app-charm/pyproject\\.toml$"
       ],
       "groupName": "Python dependencies",
     }
