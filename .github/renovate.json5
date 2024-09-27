@@ -10,7 +10,7 @@
   ],
   "customManagers": [
     {
-      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+      "fileMatch": ["^tests/integration/app-charm/charmcraft\\.yaml$"],
       "matchStrings": [
         "(?<packageName>.+)==(?<currentValue>[0-9\\.]+)+ +# renovate: pypi"
       ],
